@@ -1,5 +1,5 @@
 import { Eventcalendar } from "@mobiscroll/react";
-import { useMemo, useCallback, useState, useEffect } from "react";
+import { useMemo, useCallback, useState } from "react";
 
 const Calendar = () => {
   const view = useMemo(() => {
@@ -17,7 +17,8 @@ const Calendar = () => {
     if (event.original.other) {
       return (
         <div style={{ backgroundColor: "lightgreen" }}>
-          <p>Event</p> <p>Event</p>
+          <p>Event</p>
+          <p>Event</p>
         </div>
       );
     }
