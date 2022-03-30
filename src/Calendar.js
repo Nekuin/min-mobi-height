@@ -14,6 +14,9 @@ const Calendar = () => {
   }, []);
 
   const renderEvent = useCallback((event) => {
+    // by negating the next if, you can see all the yellow
+    // events like you should, but the green ones have useless
+    // extra space.
     if (event.original.other) {
       return (
         <div style={{ backgroundColor: "lightgreen" }}>
